@@ -1,4 +1,5 @@
 import AboutUs from "../About Us/AboutUs";
+import AppoimentOffer from "../Appoimnet Offer/AppoimentOffer";
 import Banner from "../Banner/Banner";
 import CareForPatient from "../Care For Every Patient/CareForPatient";
 import EmpoweringHealth from "../Empowering Health/EmpoweringHealth";
@@ -13,6 +14,7 @@ const Home = () => {
       <EmpoweringHealth></EmpoweringHealth>
       <AboutUs></AboutUs>
       <Faq></Faq>
+      <AppoimentOffer></AppoimentOffer>
     </div>
   );
 };

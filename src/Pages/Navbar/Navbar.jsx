@@ -5,6 +5,7 @@ import toast, { Toaster } from "react-hot-toast";
 import logoLight from "../../../public/logo light.png";
 import { MdArrowOutward } from "react-icons/md";
 
+
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleLogOut = () => {
@@ -36,9 +37,10 @@ const Navbar = () => {
     </>
   );
   return (
+    
     <div className="navbar md:bg-base-100 md:mb-6 md:mt-6 sm: mb-28">
       <div className="navbar-start">
-        <div className=" text-4xl sm: pl-10">
+        <div className=" text-4xl">
           <NavLink to="/">
             <img src={logoLight} />
           </NavLink>

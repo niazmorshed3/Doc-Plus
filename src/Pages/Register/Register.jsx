@@ -1,14 +1,13 @@
 import { useContext, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { AuthContext } from "../../Provider/ContextProvider";
-import { updateProfile } from "firebase/auth";
-import auth from "../../Firebase/firebase.config";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
   const [showPass, setShowPass] = useState(false);
+  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -36,6 +35,7 @@ const Register = () => {
       .then(() => {
         e.target.reset();
         toast.success("Register Successfully");
+        navigate("/");
       })
       .catch((error) => {
         console.error(error);

@@ -1,14 +1,12 @@
 import { useContext, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/ContextProvider";
 import { FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 const Login = () => {
   const { logIn, googleSignIn, gitHubSignIn } = useContext(AuthContext);
   const [showPass, setShowPass] = useState(false);
-
-  const location = useLocation();
   const nevigate = useNavigate();
 
   const handleLogin = (e) => {
@@ -20,16 +18,10 @@ const Login = () => {
 
     // Logging in With The Function Calling
     logIn(mail, pass)
-      .then((result) => {
+      .then(() => {
         toast.success("Login Successfully");
-        const user = result.user;
-
-        const email = user.email;
-        console.log(email);
-
-        console.log(user);
+        nevigate("/");
         e.target.reset();
-        nevigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.error(error);
@@ -38,9 +30,9 @@ const Login = () => {
   };
   const handleGoogleSignIn = () => {
     googleSignIn()
-      .then((result) => {
-        const user = result.user;
-        console.log(user);
+      .then(() => {
+        toast.success("Login Successfully");
+        nevigate("/");
       })
       .catch((error) => {
         console.error(error);

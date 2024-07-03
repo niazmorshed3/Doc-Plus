@@ -45,48 +45,16 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar md:bg-base-100 md:mb-6 md:mt-6 sm: mb-28">
-      <div className="navbar-start ">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            {navLinks}
-          </ul>
-        </div>
-        <div
-          className="sm: pl-10"
-          data
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
-          <a className="text-4xl">
-            <img src={logoLight} alt="" />
-          </a>
+    <div className="navbar md:bg-base-100 md:mb-6 md:mt-6 sm: mb-28 border" >
+      <div className="navbar-start">
+        <div className=" text-4xl sm: pl-10">
+            <img src={logoLight} />
         </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center lg:flex border">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end gap-2">
-        {/* <DarkMode></DarkMode> */}
         <button className="btn btn-outline">
           Appoinment{" "}
           <span className="text-2xl">

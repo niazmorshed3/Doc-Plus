@@ -20,37 +20,31 @@ const Navbar = () => {
   };
   const navLinks = (
     <>
-      <NavLink>
-        <li>
-          <span className="text-base font-semibold">Home</span>
-        </li>
-      </NavLink>
+      <li>
+        <span className="text-base font-semibold">Home</span>
+      </li>
 
-      <NavLink>
-        <li>
-          <span className="text-base font-semibold">Service</span>
-        </li>
-      </NavLink>
-      <NavLink>
-        <li>
-          <span className="text-base font-semibold">Blog</span>
-        </li>
-      </NavLink>
-      <NavLink>
-        <li>
-          <span className="text-base font-semibold">About Us</span>
-        </li>
-      </NavLink>
+      <li>
+        <span className="text-base font-semibold">Service</span>
+      </li>
+      <li>
+        <span className="text-base font-semibold">Blog</span>
+      </li>
+      <li>
+        <span className="text-base font-semibold">About Us</span>
+      </li>
     </>
   );
   return (
-    <div className="navbar md:bg-base-100 md:mb-6 md:mt-6 sm: mb-28 border" >
+    <div className="navbar md:bg-base-100 md:mb-6 md:mt-6 sm: mb-28">
       <div className="navbar-start">
         <div className=" text-4xl sm: pl-10">
-            <NavLink to="/" ><img src={logoLight} /></NavLink>
+          <NavLink to="/">
+            <img src={logoLight} />
+          </NavLink>
         </div>
       </div>
-      <div className="navbar-center lg:flex border">
+      <div className="navbar-center lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end gap-2">
@@ -63,11 +57,11 @@ const Navbar = () => {
         </button>
         {user ? (
           <div className="align-middle dropdown dropdown-end">
-              <div>
-                <button onClick={handleLogOut} className="btn">
-                  Logout
-                </button>
-              </div>
+            <div>
+              <button onClick={handleLogOut} className="btn">
+                Logout
+              </button>
+            </div>
           </div>
         ) : (
           <>

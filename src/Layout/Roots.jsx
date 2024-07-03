@@ -1,12 +1,13 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Pages/Navbar/Navbar";
 
-
 const Roots = () => {
   return (
     <div>
-      <Navbar></Navbar>
-      <Outlet></Outlet>
+      <div className="max-w-7xl mx-auto font-sourceSans">
+        <Navbar></Navbar>
+        <Outlet></Outlet>
+      </div>
     </div>
   );
 };

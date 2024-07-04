@@ -4,6 +4,7 @@ import Banner from "../Banner/Banner";
 import CareForPatient from "../Care For Every Patient/CareForPatient";
 import EmpoweringHealth from "../Empowering Health/EmpoweringHealth";
 import Faq from "../FAQ/Faq";
+
 import GetSolutions from "../Get Solutions/GetSolutions";
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <AboutUs></AboutUs>
       <Faq></Faq>
       <AppoimentOffer></AppoimentOffer>
+      
     </div>
   );
 };

@@ -14,11 +14,17 @@
 }
 
 .banner2 {
-  background-image: linear-gradient(rgba(42, 12, 112, 0.336), rgba(46, 15, 104, 0.329)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(21, 12, 143, 0.651)),
     url("https://i.ibb.co/TLFK80T/Rectangle-32.png");
   background-size: cover;
   background-position: center;
   max-width: 1320px;
   min-height: 550px;
   border-radius: 24px;
+}
+.footer {
+  background-color: #020843;
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
 }

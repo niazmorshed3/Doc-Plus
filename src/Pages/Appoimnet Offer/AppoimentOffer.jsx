@@ -1,18 +1,30 @@
-import logo from "../.../../../../public/logo light.png"
+import logo from "../.../../../../public/logo light.png";
+import { MdArrowOutward } from "react-icons/md";
 const AppoimentOffer = () => {
   return (
     <section className="banner2">
-      <section className="pt-24">
-        <div className="flex w-full gap-4">
-          <div className="w-1/2 border">
-            <h1 className="text-4xl font-bold text-white">Get Your <br /> First Appointment <br /> at 50% Off!</h1>
-            <br />
-            <button className="btn  btn-warning mr-2">Appoinment</button>
-            <button className="btn btn-outline text-white">Learn More</button>
-          </div>
-          <div className="w-1/2 border">
-            <img src={logo} alt="" />
-          </div>
+      <div className="justify-end items-end flex">
+        <img className="p-4" src={logo} alt="" />
+      </div>
+
+      <section className="pt-24 relative">
+        <div className="mx-4">
+          <h1 className="text-4xl font-bold text-white">
+            Get Your <br /> First Appointment <br /> at 50% Off!
+          </h1>
+          <br />
+          <button className="btn  btn-warning mr-2">
+            Appoinment{" "}
+            <span className="text-xl">
+              <MdArrowOutward />{" "}
+            </span>
+          </button>
+          <button className="btn btn-outline text-white">
+            Learn More{" "}
+            <span className="text-xl">
+              <MdArrowOutward />{" "}
+            </span>
+          </button>
         </div>
       </section>
     </section>
@@ -20,5 +32,3 @@ const AppoimentOffer = () => {
 };
 
 export default AppoimentOffer;
-
-

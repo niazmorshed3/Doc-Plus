@@ -1,8 +1,8 @@
-# React + Vite
+Doc Plus <br/>
+Live Link- https://doc-plus-59aea.web.app/
+This is a Medical service providing website. <br/> User can take any medical service through out the website and can see any further details regarding medical services. <br/. Here User can Login with Google and gitHub. <br/> Tools i have used: <br/> 
+1) HTML
+2) Tailwind CSS
+3) React JS
+4) Firebase (for authentication and deployment)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
